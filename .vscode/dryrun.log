@@ -1,0 +1,5 @@
+make all --dry-run --keep-going --print-directory
+make: 進入目錄「/home/xwk/cprog/sort-compare」
+gcc main.o data_generator.o quicksort.o -o main
+make: 離開目錄「/home/xwk/cprog/sort-compare」
+ 

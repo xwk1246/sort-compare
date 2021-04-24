@@ -1,0 +1,397 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+ 
+# 為 x86_64-pc-linux-gnu 編譯
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# 授權條款：GPLv3+：GNU 通用公共授權條款第 3 版或更新版本<http://gnu.org/licenses/gpl.html>。
+# 本軟體是自由軟體：您可以自由修改和重新發布它。
+# 在法律允許的範圍內沒有其他保證。
+ 
+
+# make 資料基礎，輸出在 Sun Apr 25 03:48:52 2021
+
+# 變數
+
+# 環境
+NO_AT_BRIDGE = 1
+# 環境
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/xwk/.gtkrc:/home/xwk/.config/gtkrc
+# 環境
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ace9429a-c3bc-4c47-b0a9-37a48c9cd6f0.sock
+# 環境
+LC_NAME = zh_TW.UTF-8
+# 環境
+LC_NUMERIC = zh_TW.UTF-8
+# 環境
+VSCODE_CWD = /home/xwk
+# 環境
+LC_ADDRESS = zh_TW.UTF-8
+# 預設
+MAKE_COMMAND := make
+# 環境
+GTK3_MODULES = xapp-gtk3-module
+# 自動
+@D = $(patsubst %/,%,$(dir $@))
+# 環境
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# 預設
+.VARIABLES := 
+# 環境
+PWD = /home/xwk/cprog/sort-compare
+# 自動
+%D = $(patsubst %/,%,$(dir $%))
+# 環境
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# 環境
+MAIL = /var/spool/mail/xwk
+# 環境
+XDG_DATA_DIRS = /home/xwk/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+# 環境
+OLDPWD = /home/xwk
+# 自動
+^D = $(patsubst %/,%,$(dir $^))
+# 環境
+VSCODE_LOG_STACK = false
+# 自動
+%F = $(notdir $%)
+# 環境
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+# 環境
+LANG = zh_TW.UTF-8
+# 環境
+XAUTHORITY = /home/xwk/.Xauthority
+# 預設
+.LOADED := 
+# 預設
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/xwk/cprog/sort-compare
+# 環境
+VSCODE_PIPE_LOGGING = true
+# 環境
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# 自動
+*D = $(patsubst %/,%,$(dir $*))
+# 環境
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# 環境
+MFLAGS = -pqrR
+# 預設
+.SHELLFLAGS := -c
+# 環境
+QT_LINUX_ACCESSIBILITY_ALWAYS_ON = 1
+# 自動
++D = $(patsubst %/,%,$(dir $+))
+# 環境
+P9K_SSH = 0
+# 環境
+XCURSOR_THEME = macOSBigSur
+# 環境
+XDG_SESSION_DESKTOP = KDE
+# 環境
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=1a3a5f82-7d41-42ab-ae32-608e683b9364&iid=1a3a5f82-7d41-42ab-ae32-608e683b9364&sid=1a3a5f82-7d41-42ab-ae32-608e683b9364","uploadToServer":true}
+# makefile (從「makefile」，行 1)
+MAKEFILE_LIST := makefile
+# 自動
+@F = $(notdir $@)
+# 環境
+ZSH = /home/xwk/.oh-my-zsh
+# 環境
+VSCODE_VERBOSE_LOGGING = true
+# 環境
+VSCODE_PID = 49947
+# 環境
+XDG_SESSION_TYPE = x11
+# 自動
+?D = $(patsubst %/,%,$(dir $?))
+# 環境
+SESSION_MANAGER = local/xwk-desktop:@/tmp/.ICE-unix/1017,unix/xwk-desktop:/tmp/.ICE-unix/1017
+# 自動
+*F = $(notdir $*)
+# 環境
+CHROME_DESKTOP = code-url-handler.desktop
+# 環境
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# 自動
+<D = $(patsubst %/,%,$(dir $<))
+# 環境
+VSCODE_NLS_CONFIG = {"locale":"zh-tw","availableLanguages":{"*":"zh-tw"},"_languagePackId":"ad0b03f4186b75a9c8ca5f3802d098c8.zh-tw","_translationsConfigFile":"/home/xwk/.config/Code/clp/ad0b03f4186b75a9c8ca5f3802d098c8.zh-tw/tcf.json","_cacheRoot":"/home/xwk/.config/Code/clp/ad0b03f4186b75a9c8ca5f3802d098c8.zh-tw","_resolvedLanguagePackCoreLocation":"/home/xwk/.config/Code/clp/ad0b03f4186b75a9c8ca5f3802d098c8.zh-tw/3c4e3df9e89829dce27b7b5c24508306b151f30d","_corruptedFile":"/home/xwk/.config/Code/clp/ad0b03f4186b75a9c8ca5f3802d098c8.zh-tw/corrupted.info","_languagePackSupport":true}
+# 環境
+BREAKPAD_DUMP_LOCATION = /home/xwk/.config/Code/exthost Crash Reports
+# 預設
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# 預設
+MAKECMDGOALS := all
+# 環境
+XMODIFIERS = @im=fcitx
+# 環境
+SHLVL = 0
+# 環境
+MAKELEVEL := 0
+# 預設
+MAKE = $(MAKE_COMMAND)
+# 環境
+PATH = /home/xwk/.local/bin:/home/xwk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+# 預設
+MAKEFILES := 
+# 環境
+LANGUAGE = 
+# 環境
+LC_MONETARY = zh_TW.UTF-8
+# 環境
+MOTD_SHOWN = pam
+# 自動
+^F = $(notdir $^)
+# 環境
+LC_TIME = zh_TW.UTF-8
+# 環境
+VSCODE_LOG_NATIVE = false
+# 環境
+LC_TELEPHONE = zh_TW.UTF-8
+# 自動
+?F = $(notdir $?)
+# 環境
+KDE_APPLICATIONS_AS_SCOPE = 1
+# 環境
+XDG_SEAT = seat0
+# 環境
+GTK_IM_MODULE = fcitx
+# 環境
+XDG_CURRENT_DESKTOP = KDE
+# 環境
+LS_COLORS = 
+# 自動
++F = $(notdir $+)
+# 環境
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# 環境
+LESS = -R
+# 環境
+DESKTOP_SESSION = plasma
+# 環境
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# 「override」指令
+GNUMAKEFLAGS := 
+# 環境
+BROWSER = /usr/bin/firefox
+# 環境
+LOGNAME = xwk
+ 
+# 環境
+XDG_VTNR = 1
+# makefile
+.DEFAULT_GOAL := all
+# 環境
+EDITOR = /usr/bin/nano
+# 環境
+DISPLAY = :0
+# 環境
+GTK_MODULES = canberra-gtk-module
+# 環境
+USER = xwk
+# 預設
+MAKE_VERSION := 4.3
+# 環境
+KDE_SESSION_UID = 1000
+# 環境
+LC_MEASUREMENT = zh_TW.UTF-8
+# 環境
+PAGER = less
+# 環境
+VSCODE_NODE_CACHED_DATA_DIR = /home/xwk/.config/Code/CachedData/3c4e3df9e89829dce27b7b5c24508306b151f30d
+# 環境
+_ = /usr/bin/make
+# 環境
+LC_PAPER = zh_TW.UTF-8
+# 環境
+XDG_RUNTIME_DIR = /run/user/1000
+# 環境
+XDG_SESSION_CLASS = user
+# 環境
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# 環境
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/xwk/.gtkrc-2.0:/home/xwk/.config/gtkrc-2.0
+# 環境
+HOME = /home/xwk
+# 環境
+QT_IM_MODULE = fcitx
+# 環境
+ELECTRON_RUN_AS_NODE = 1
+# 環境
+VSCODE_IPC_HOOK = /run/user/1000/vscode-30b478e1-1.55.2-main.sock
+# 環境
+XDG_SESSION_ID = 1
+# 環境
+XCURSOR_SIZE = 24
+# 預設
+.RECIPEPREFIX := 
+# 自動
+<F = $(notdir $<)
+# 預設
+SUFFIXES := 
+# 環境
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# 環境
+KDE_SESSION_VERSION = 5
+# 預設
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# 環境
+KDE_FULL_SESSION = true
+# 環境
+LC_IDENTIFICATION = zh_TW.UTF-8
+# 變數的雜湊表狀態:
+# 負載=115/1024=11%, 重新雜湊=0, 碰撞=8/148=5%
+
+# Pattern-specific 變數值
+
+# 沒有 pattern-specific 變數的值。
+
+# 目錄
+
+# . (裝置 2053，i-節點 3939652)：19 檔案， 無 不可能.
+
+# 19 檔案， 無 不可能在 1 目錄中。
+
+# 隱含規則
+
+# 沒有隱含規則。
+
+# 檔案
+
+# 不是一個目標：
+quicksort.h:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-25 02:56:44.614349543
+#  檔案已經被更新。
+#  更新成功。
+
+# 不是一個目標：
+data_generator.c:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-25 02:22:36.428856845
+#  檔案已經被更新。
+#  更新成功。
+
+clean:
+#  對隱含規則的搜尋尚未完成。
+#  從不檢查修改時間。
+#  檔案尚未被更新。
+#  要執行的方案 (從「makefile」，行 14)：
+	rm -f data_generator.o quicksort.o main.o main
+	
+
+# 不是一個目標：
+.DEFAULT:
+#  對隱含規則的搜尋尚未完成。
+ 
+#  從不檢查修改時間。
+#  檔案尚未被更新。
+
+data_generator.o: data_generator.c data_generator.h
+#  對隱含規則的搜尋尚未完成。
+#  最近更新 2021-04-25 03:48:18.859264589
+#  檔案已經被更新。
+#  更新成功。
+#  要執行的方案 (從「makefile」，行 8)：
+	gcc -c data_generator.c -o data_generator.o
+
+all: main.o data_generator.o quicksort.o
+#  指令列目標。
+#  對隱含規則的搜尋尚未完成。
+#  隱含/靜態模式主幹：「」
+#  檔案不存在。
+#  檔案已經被更新。
+#  需要更新 (用 -q 設定)。
+# 自動
+# @ := all
+# 自動
+# * := 
+# 自動
+# < := main.o
+# 自動
+# + := main.o data_generator.o quicksort.o
+# 自動
+# % := 
+# 自動
+# ^ := main.o data_generator.o quicksort.o
+# 自動
+# ? := main.o data_generator.o quicksort.o
+# 自動
+# | := 
+# 變數的雜湊表狀態:
+# 負載=8/32=25%, 重新雜湊=0, 碰撞=1/11=9%
+#  要執行的方案 (從「makefile」，行 2)：
+	gcc main.o data_generator.o quicksort.o -o main
+
+# 不是一個目標：
+main.c:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-25 03:43:39.207015513
+#  檔案已經被更新。
+#  更新成功。
+
+main.o: main.c
+#  對隱含規則的搜尋尚未完成。
+#  最近更新 2021-04-25 03:48:18.839264426
+#  檔案已經被更新。
+#  更新成功。
+#  要執行的方案 (從「makefile」，行 5)：
+	gcc -c main.c -o main.o
+
+quicksort.o: quicksort.c quicksort.h
+#  對隱含規則的搜尋尚未完成。
+#  最近更新 2021-04-25 03:48:18.879264746
+#  檔案已經被更新。
+#  更新成功。
+#  要執行的方案 (從「makefile」，行 11)：
+	gcc -c quicksort.c -o quicksort.o
+
+# 不是一個目標：
+data_generator.h:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-24 23:21:22.451963071
+#  檔案已經被更新。
+#  更新成功。
+
+# 不是一個目標：
+makefile:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-25 03:48:10.61919865
+#  檔案已經被更新。
+#  更新成功。
+
+# 不是一個目標：
+.SUFFIXES:
+#  對隱含規則的搜尋尚未完成。
+#  從不檢查修改時間。
+#  檔案尚未被更新。
+
+# 不是一個目標：
+quicksort.c:
+#  對隱含規則的搜尋已完成。
+ 
+#  最近更新 2021-04-25 03:04:44.737736273
+#  檔案已經被更新。
+#  更新成功。
+
+# 檔案雜湊表狀態:
+# 負載=13/1024=1%, 重新雜湊=0, 碰撞=0/36=0%
+# VPATH 搜尋路徑
+
+# 沒有「vpath」搜尋路徑。
+
+# 沒有通用搜尋路徑(「VPATH」變數)。
+
+# strcache 緩衝: 1 (0) / 字串 = 25 / 空間 = 244 B / 平均 = 9 B
+# 目前緩衝: 尺寸 = 8162 B / 已用 = 244 B / 數量 = 25 / 平均 = 9 B
+
+# strcache 性能：尋找 = 47 / 命中率 = 46%
+# 雜湊表統計資料:
+# 負載=25/8192=0%, 重新雜湊=0, 碰撞=0/47=0%
+# 在 Sun Apr 25 03:48:52 2021
+ 上完成 make 資料基礎
+ 
