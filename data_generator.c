@@ -14,3 +14,22 @@ int randint(int dataSize) {
     fclose(fp);
     return 0;
 }
+
+int randstring(int dataSize) {
+    int x;
+    int i, j;
+    FILE* fp = fopen("dataset2.txt", "w");
+    srand(time(NULL));
+    for (i = 0; i < dataSize; i++) {
+        for (j = 0; j < 100; j++) {
+            x = rand() % 52;
+            while (x >= 26 && x <= 32) {
+                x = rand() % 52;
+            }
+            fprintf(fp, "%c", 'A' + x);
+        }
+        fprintf(fp, "\n");
+    }
+    fclose(fp);
+    return 0;
+}

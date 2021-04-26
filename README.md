@@ -28,7 +28,7 @@ Makefile 語法和示範 - https://hackmd.io/@sysprog/SySTMXPvl
 
 堆排序(Heapsort)https://www.youtube.com/watch?v=j-DqQcNPGbE
 
-loyiCodes #18：更快的排序演算法——快速排序 (Quick Sort) - https://www.youtube.com/watch?v=AsQW27DT82I&t=250s
+更快的排序演算法——快速排序 (Quick Sort) - https://www.youtube.com/watch?v=AsQW27DT82I&t=250s
 
 
 

@@ -22,6 +22,7 @@ int main() {
     scanf("%d", &n);
     for (j = 0; j < n; j++) {
         randint(1000000);
+        randstring(1000000);
         FILE* fp = fopen("dataset1.txt", "r");
         i = 0;
         while (fscanf(fp, "%d", &nums_tmp[i++]) != EOF) {}
