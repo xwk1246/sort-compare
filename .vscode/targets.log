@@ -1,14 +1,12 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # GNU Make 4.3
- 
 # 為 x86_64-pc-linux-gnu 編譯
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # 授權條款：GPLv3+：GNU 通用公共授權條款第 3 版或更新版本<http://gnu.org/licenses/gpl.html>。
 # 本軟體是自由軟體：您可以自由修改和重新發布它。
 # 在法律允許的範圍內沒有其他保證。
- 
 
-# make 資料基礎，輸出在 Sun Apr 25 03:48:52 2021
+# make 資料基礎，輸出在 Mon Apr 26 19:21:24 2021
 
 # 變數
 
@@ -17,7 +15,7 @@ NO_AT_BRIDGE = 1
 # 環境
 GTK_RC_FILES = /etc/gtk/gtkrc:/home/xwk/.gtkrc:/home/xwk/.config/gtkrc
 # 環境
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ace9429a-c3bc-4c47-b0a9-37a48c9cd6f0.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e2de7f24-b979-49af-aa4d-0f3bc69c4c94.sock
 # 環境
 LC_NAME = zh_TW.UTF-8
 # 環境
@@ -101,13 +99,13 @@ ZSH = /home/xwk/.oh-my-zsh
 # 環境
 VSCODE_VERBOSE_LOGGING = true
 # 環境
-VSCODE_PID = 49947
+VSCODE_PID = 4001
 # 環境
 XDG_SESSION_TYPE = x11
 # 自動
 ?D = $(patsubst %/,%,$(dir $?))
 # 環境
-SESSION_MANAGER = local/xwk-desktop:@/tmp/.ICE-unix/1017,unix/xwk-desktop:/tmp/.ICE-unix/1017
+SESSION_MANAGER = local/xwk-desktop:@/tmp/.ICE-unix/1041,unix/xwk-desktop:/tmp/.ICE-unix/1041
 # 自動
 *F = $(notdir $*)
 # 環境
@@ -135,7 +133,7 @@ MAKELEVEL := 0
 # 預設
 MAKE = $(MAKE_COMMAND)
 # 環境
-PATH = /home/xwk/.local/bin:/home/xwk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin
+PATH = /home/xwk/.local/bin:/home/xwk/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin:/var/lib/flatpak/exports/bin
 # 預設
 MAKEFILES := 
 # 環境
@@ -180,7 +178,6 @@ GNUMAKEFLAGS :=
 BROWSER = /usr/bin/firefox
 # 環境
 LOGNAME = xwk
- 
 # 環境
 XDG_VTNR = 1
 # makefile
@@ -252,9 +249,9 @@ LC_IDENTIFICATION = zh_TW.UTF-8
 
 # 目錄
 
-# . (裝置 2053，i-節點 3939652)：19 檔案， 無 不可能.
+# . (裝置 2053，i-節點 3939652)：24 檔案， 無 不可能.
 
-# 19 檔案， 無 不可能在 1 目錄中。
+# 24 檔案， 無 不可能在 1 目錄中。
 
 # 隱含規則
 
@@ -262,10 +259,18 @@ LC_IDENTIFICATION = zh_TW.UTF-8
 
 # 檔案
 
+mergesort.o: mergesort.c mergesort.h
+#  對隱含規則的搜尋尚未完成。
+#  最近更新 2021-04-26 19:19:58.18348965
+#  檔案已經被更新。
+#  更新成功。
+#  要執行的方案 (從「makefile」，行 14)：
+	gcc -c mergesort.c -o mergesort.o
+
 # 不是一個目標：
 quicksort.h:
 #  對隱含規則的搜尋已完成。
-#  最近更新 2021-04-25 02:56:44.614349543
+#  最近更新 2021-04-25 19:59:10.144111707
 #  檔案已經被更新。
 #  更新成功。
 
@@ -278,28 +283,28 @@ data_generator.c:
 
 clean:
 #  對隱含規則的搜尋尚未完成。
+ 
 #  從不檢查修改時間。
 #  檔案尚未被更新。
-#  要執行的方案 (從「makefile」，行 14)：
-	rm -f data_generator.o quicksort.o main.o main
+#  要執行的方案 (從「makefile」，行 17)：
+	rm -f data_generator.o quicksort.o mergesort.o main.o main
 	
 
 # 不是一個目標：
 .DEFAULT:
 #  對隱含規則的搜尋尚未完成。
- 
 #  從不檢查修改時間。
 #  檔案尚未被更新。
 
 data_generator.o: data_generator.c data_generator.h
 #  對隱含規則的搜尋尚未完成。
-#  最近更新 2021-04-25 03:48:18.859264589
+#  最近更新 2021-04-26 18:18:06.617110527
 #  檔案已經被更新。
 #  更新成功。
 #  要執行的方案 (從「makefile」，行 8)：
 	gcc -c data_generator.c -o data_generator.o
 
-all: main.o data_generator.o quicksort.o
+all: main.o data_generator.o quicksort.o mergesort.o
 #  指令列目標。
 #  對隱含規則的搜尋尚未完成。
 #  隱含/靜態模式主幹：「」
@@ -313,30 +318,30 @@ all: main.o data_generator.o quicksort.o
 # 自動
 # < := main.o
 # 自動
-# + := main.o data_generator.o quicksort.o
+# + := main.o data_generator.o quicksort.o mergesort.o
 # 自動
 # % := 
 # 自動
-# ^ := main.o data_generator.o quicksort.o
+# ^ := main.o data_generator.o quicksort.o mergesort.o
 # 自動
-# ? := main.o data_generator.o quicksort.o
+# ? := main.o data_generator.o quicksort.o mergesort.o
 # 自動
 # | := 
 # 變數的雜湊表狀態:
 # 負載=8/32=25%, 重新雜湊=0, 碰撞=1/11=9%
 #  要執行的方案 (從「makefile」，行 2)：
-	gcc main.o data_generator.o quicksort.o -o main
+	gcc main.o data_generator.o quicksort.o mergesort.o -o main
 
 # 不是一個目標：
 main.c:
 #  對隱含規則的搜尋已完成。
-#  最近更新 2021-04-25 03:43:39.207015513
+#  最近更新 2021-04-26 18:20:32.998236301
 #  檔案已經被更新。
 #  更新成功。
 
 main.o: main.c
 #  對隱含規則的搜尋尚未完成。
-#  最近更新 2021-04-25 03:48:18.839264426
+#  最近更新 2021-04-26 18:20:34.348246791
 #  檔案已經被更新。
 #  更新成功。
 #  要執行的方案 (從「makefile」，行 5)：
@@ -344,7 +349,7 @@ main.o: main.c
 
 quicksort.o: quicksort.c quicksort.h
 #  對隱含規則的搜尋尚未完成。
-#  最近更新 2021-04-25 03:48:18.879264746
+#  最近更新 2021-04-26 18:18:06.627110604
 #  檔案已經被更新。
 #  更新成功。
 #  要執行的方案 (從「makefile」，行 11)：
@@ -360,7 +365,14 @@ data_generator.h:
 # 不是一個目標：
 makefile:
 #  對隱含規則的搜尋已完成。
-#  最近更新 2021-04-25 03:48:10.61919865
+#  最近更新 2021-04-26 18:17:48.886975978
+#  檔案已經被更新。
+#  更新成功。
+
+# 不是一個目標：
+mergesort.h:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-26 18:17:10.936689485
 #  檔案已經被更新。
 #  更新成功。
 
@@ -373,25 +385,31 @@ makefile:
 # 不是一個目標：
 quicksort.c:
 #  對隱含規則的搜尋已完成。
- 
-#  最近更新 2021-04-25 03:04:44.737736273
+#  最近更新 2021-04-25 19:58:58.174014465
+#  檔案已經被更新。
+#  更新成功。
+
+# 不是一個目標：
+mergesort.c:
+#  對隱含規則的搜尋已完成。
+#  最近更新 2021-04-26 19:11:25.526667865
 #  檔案已經被更新。
 #  更新成功。
 
 # 檔案雜湊表狀態:
-# 負載=13/1024=1%, 重新雜湊=0, 碰撞=0/36=0%
+# 負載=16/1024=2%, 重新雜湊=0, 碰撞=0/43=0%
 # VPATH 搜尋路徑
 
 # 沒有「vpath」搜尋路徑。
 
 # 沒有通用搜尋路徑(「VPATH」變數)。
 
-# strcache 緩衝: 1 (0) / 字串 = 25 / 空間 = 244 B / 平均 = 9 B
-# 目前緩衝: 尺寸 = 8162 B / 已用 = 244 B / 數量 = 25 / 平均 = 9 B
+# strcache 緩衝: 1 (0) / 字串 = 30 / 空間 = 293 B / 平均 = 9 B
+# 目前緩衝: 尺寸 = 8162 B / 已用 = 293 B / 數量 = 30 / 平均 = 9 B
 
-# strcache 性能：尋找 = 47 / 命中率 = 46%
+# strcache 性能：尋找 = 57 / 命中率 = 47%
 # 雜湊表統計資料:
-# 負載=25/8192=0%, 重新雜湊=0, 碰撞=0/47=0%
-# 在 Sun Apr 25 03:48:52 2021
+# 負載=30/8192=0%, 重新雜湊=0, 碰撞=0/57=0%
+# 在 Mon Apr 26 19:21:24 2021
  上完成 make 資料基礎
  
