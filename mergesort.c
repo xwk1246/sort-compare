@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 
 void merge(int number[], int left, int mid, int right) {
     int i = 0;

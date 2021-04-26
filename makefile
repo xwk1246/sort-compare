@@ -1,5 +1,5 @@
-all: main.o data_generator.o quicksort.o mergesort.o
-	gcc main.o data_generator.o quicksort.o mergesort.o -o main
+all: main.o data_generator.o quicksort.o mergesort.o heapsort.o
+	gcc main.o data_generator.o quicksort.o mergesort.o heapsort.o -o main
 
 main.o: main.c
 	gcc -c main.c -o main.o
@@ -13,6 +13,9 @@ quicksort.o: quicksort.c quicksort.h
 mergesort.o: mergesort.c mergesort.h
 	gcc -c mergesort.c -o mergesort.o
 
+heapsort.o: heapsort.c heapsort.h
+	gcc -c heapsort.c -o heapsort.o
+
 clean:
-	rm -f data_generator.o quicksort.o mergesort.o main.o main
+	rm -f data_generator.o quicksort.o mergesort.o heapsort.o main.o main
 	

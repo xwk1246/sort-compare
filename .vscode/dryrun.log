@@ -4,6 +4,7 @@ gcc -c main.c -o main.o
 gcc -c data_generator.c -o data_generator.o
 gcc -c quicksort.c -o quicksort.o
 gcc -c mergesort.c -o mergesort.o
-gcc main.o data_generator.o quicksort.o mergesort.o -o main
+gcc -c heapsort.c -o heapsort.o
+gcc main.o data_generator.o quicksort.o mergesort.o heapsort.o -o main
 make: 離開目錄「/home/xwk/cprog/sort-compare」
  
