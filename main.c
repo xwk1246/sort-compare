@@ -8,23 +8,20 @@
 #include <string.h>
 #define DATASIZE 1000000
 
-double getdiff(struct timeval start, struct timeval end)
-{
+double getdiff(struct timeval start, struct timeval end) {
     return (end.tv_sec - start.tv_sec) * 1000000 + end.tv_usec - start.tv_usec;
 }
-int main()
-{
+int main() {
     int i;
     int j;
-    int nums_tmp[DATASIZE];
-    char *string_line[DATASIZE];
+    static int nums_tmp[DATASIZE];
+    static char* string_line[DATASIZE];
     struct timeval start;
     struct timeval end;
     int n;
     printf("Enter number of tests:\n");
     scanf("%d", &n);
-    for (j = 0; j < n; j++)
-    {
+    for (j = 0; j < n; j++) {
         printf("--------------------------------\n");
         printf("test %d\n", j + 1);
         printf("--------------------------------\n");
@@ -35,12 +32,12 @@ int main()
         randstring(1000000);
         printf("done\n");
 
-        FILE *fp = fopen("dataset1.txt", "r");
+        FILE* fp = fopen("dataset1.txt", "r");
         i = 0;
         while (fscanf(fp, "%d", &nums_tmp[i++]) != EOF)
             ;
         fclose(fp);
-        int *nums = (int *)malloc(sizeof(int) * DATASIZE);
+        int* nums = (int*)malloc(sizeof(int) * DATASIZE);
         memcpy(nums, nums_tmp, sizeof(int) * DATASIZE);
         fp = fopen("dataset2.txt", "r");
 
