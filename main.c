@@ -58,8 +58,11 @@ int main() {
 
         int* nums = (int*)malloc(sizeof(int) * DATASIZE);
         memcpy(nums, nums_tmp, sizeof(int) * DATASIZE);
+        char** strings = (char**)malloc(sizeof(char*) * DATASIZE + 1);
+        memcpy(strings, string_line, sizeof(char*) * DATASIZE + 1);
         gettimeofday(&start, NULL);
         quickSort(nums, 0, DATASIZE - 1);
+        quickSort_str(strings, 0, DATASIZE - 1);
         gettimeofday(&end, NULL);
         printf("quicksort finished in %.2f ms\n", getdiff(start, end) / 1000);
 
