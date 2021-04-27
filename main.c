@@ -11,14 +11,36 @@
 double getdiff(struct timeval start, struct timeval end) {
     return (end.tv_sec - start.tv_sec) * 1000000 + end.tv_usec - start.tv_usec;
 }
+
+void readdata(int* nums_tmp, char** string_line) {
+    int i;
+    char* tmpLine;
+    FILE* fp;
+    fp = fopen("dataset1.txt", "r");
+    i = 0;
+    while (fscanf(fp, "%d", &nums_tmp[i++]) != EOF)
+        ;
+    fclose(fp);
+
+    fp = fopen("dataset2.txt", "r");
+    i = 0;
+    while (fscanf(fp, "%s", tmpLine = (char*)malloc(sizeof(char) * 102)) != EOF) {
+        string_line[i++] = tmpLine;
+    }
+
+
+}
+
 int main() {
     int i;
     int j;
     static int nums_tmp[DATASIZE];
     static char* string_line[DATASIZE];
+    char* tmpLine;
     struct timeval start;
     struct timeval end;
     int n;
+    FILE* fp;
     printf("Enter number of tests:\n");
     scanf("%d", &n);
     for (j = 0; j < n; j++) {
@@ -32,15 +54,10 @@ int main() {
         randstring(1000000);
         printf("done\n");
 
-        FILE* fp = fopen("dataset1.txt", "r");
-        i = 0;
-        while (fscanf(fp, "%d", &nums_tmp[i++]) != EOF)
-            ;
-        fclose(fp);
+        readdata(nums_tmp, string_line);
+
         int* nums = (int*)malloc(sizeof(int) * DATASIZE);
         memcpy(nums, nums_tmp, sizeof(int) * DATASIZE);
-        fp = fopen("dataset2.txt", "r");
-
         gettimeofday(&start, NULL);
         quickSort(nums, 0, DATASIZE - 1);
         gettimeofday(&end, NULL);
