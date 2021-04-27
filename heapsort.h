@@ -1,1 +1,1 @@
-void heapsort(int tree[], int n);
+void heapSort(int tree[], int n);

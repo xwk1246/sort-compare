@@ -1,1 +1,1 @@
-void mergesort(int number[], int left, int right);
+void mergeSort(int number[], int left, int right);
