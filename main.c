@@ -27,8 +27,7 @@ void readdata(int* nums_tmp, char** string_line) {
     while (fscanf(fp, "%s", tmpLine = (char*)malloc(sizeof(char) * 102)) != EOF) {
         string_line[i++] = tmpLine;
     }
-
-
+    fclose(fp);
 }
 
 int main() {
@@ -56,13 +55,12 @@ int main() {
 
         readdata(nums_tmp, string_line);
 
+        printf("------------dataset1------------\n");
         int* nums = (int*)malloc(sizeof(int) * DATASIZE);
+
         memcpy(nums, nums_tmp, sizeof(int) * DATASIZE);
-        char** strings = (char**)malloc(sizeof(char*) * DATASIZE + 1);
-        memcpy(strings, string_line, sizeof(char*) * DATASIZE + 1);
         gettimeofday(&start, NULL);
         quickSort(nums, 0, DATASIZE - 1);
-        quickSort_str(strings, 0, DATASIZE - 1);
         gettimeofday(&end, NULL);
         printf("quicksort finished in %.2f ms\n", getdiff(start, end) / 1000);
 
@@ -77,7 +75,31 @@ int main() {
         heapSort(nums, DATASIZE);
         gettimeofday(&end, NULL);
         printf("heapsort finished in %.2f ms\n", getdiff(start, end) / 1000);
+
         free(nums);
+        printf("------------dataset2------------\n");
+
+        char** strings = (char**)malloc(sizeof(char*) * DATASIZE + 1);
+
+        memcpy(strings, string_line, sizeof(char*) * DATASIZE + 1);
+        gettimeofday(&start, NULL);
+        quickSort_str(strings, 0, DATASIZE - 1);
+        gettimeofday(&end, NULL);
+        printf("quicksort finished in %.2f ms\n", getdiff(start, end) / 1000);
+
+        memcpy(strings, string_line, sizeof(char*) * DATASIZE + 1);
+        gettimeofday(&start, NULL);
+        mergeSort_str(strings, 0, DATASIZE - 1);
+        gettimeofday(&end, NULL);
+        printf("mergesort finished in %.2f ms\n", getdiff(start, end) / 1000);
+
+        memcpy(strings, string_line, sizeof(char*) * DATASIZE + 1);
+        gettimeofday(&start, NULL);
+        heapSort_str(strings, DATASIZE);
+        gettimeofday(&end, NULL);
+        printf("heapsort finished in %.2f ms\n", getdiff(start, end) / 1000);
+
+        free(strings);
     }
     printf("---------------end--------------\n");
 
