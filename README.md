@@ -1,7 +1,5 @@
 # 排序演算法比較
 
-## 資工一 409410034 蕭文愷
-
 **Github 連結:** <https://github.com/xwk1246/sort-compare>
 
 ## 系統環境
